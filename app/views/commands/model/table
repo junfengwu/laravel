@@ -1,0 +1,6 @@
+<?php
+
+class $NAME$表 extends \Table {
+	
+	protected $table = '$NAME$表';
+}

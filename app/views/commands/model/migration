@@ -1,0 +1,33 @@
+<?php
+
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class 创建$NAME$表 extends Migration {
+
+	/**
+	 * Run the migrations.
+	 *
+	 * @return void
+	 */
+	public function up()
+	{
+		// 创建$NAME$表
+		Schema::create('$NAME$表', function($表) {
+			$表->increments('id');
+			$表->timestamps();
+		});
+	}
+
+	/**
+	 * Reverse the migrations.
+	 *
+	 * @return void
+	 */
+	public function down()
+	{
+		// 删除$NAME$表
+		Schema::drop('$NAME$表');
+	}
+
+}
